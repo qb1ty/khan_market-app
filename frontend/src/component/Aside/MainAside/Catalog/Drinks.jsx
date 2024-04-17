@@ -21,7 +21,7 @@ export default function Drinks() {
         const commodity = products.find(product => product.id === id)
         if (btn === "add_basket") {
             axios
-                .post(`http://192.168.203.246:8000/cart/add/`, {
+                .post(`http://127.0.0.1:8000/cart/add/`, {
                     "user": JSON.parse(localStorage.getItem("username_json")),
                     "product": commodity.slug,
                     "quantity": 1
