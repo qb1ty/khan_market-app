@@ -9,10 +9,10 @@ import ModalDescriptionWindow, { modalDescriptionWindow } from "../../Assistant/
 export default function Drinks() {
     const [products, setProducts] = useState([])
     const search = useAlert()
-    const url = 'http://127.0.0.1:8000/catalog/category/1/product/?format=json'
+    const URL = 'http://127.0.0.1:8000/catalog/category/1/product/?format=json'
 
     useEffect(() => {
-        Exp(search.searchItem, setProducts, url)
+        Exp(search.searchItem, setProducts, URL)
     }, [search.searchItem])
 
     const appendProductBasket = (event) => {
