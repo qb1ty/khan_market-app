@@ -4,4 +4,4 @@ const port = 3000
 
 app.use(express.static('./frontend/build'))
 
-app.listen(port, () => console.log('server has been started on port 80'))
+app.listen(port, () => console.log('server has been started on port 3000'))
